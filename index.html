@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description"
+              content="Controllers for Edge-Cloud Cyber-Physical Systems. COMSNETS @ DAC 2025.">
+        <meta name="keywords" content="Split Computing, Early Exit, Deep Neural Networks, Cyber-Physical Systems">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Controllers for Edge-Cloud Cyber-Physical Systems</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+              rel="stylesheet">
+
+        <link rel="stylesheet" href="./static/css/bulma.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <link rel="icon" href="./static/images/intelligo.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
+        <script src="./static/js/bulma-carousel.min.js"></script>
+        <script src="./static/js/bulma-slider.min.js"></script>
+        <script src="./static/js/index.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                    <a class="navbar-item" target="_blank" href="https://capogrosso.eu">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                          More Research
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" target="_blank" href="https://vips4.github.io/I-Split/">
+                                I-SPLIT (ICPR 2022)
+                            </a>
+                            <a class="navbar-item" target="_blank" href="https://luigicapogrosso.github.io/split_et_impera/">
+                                Split-Et-Impera (DDECS 2023)
+                            </a>
+                            <a class="navbar-item" target="_blank" href="https://intelligolabs.github.io/MTL-Split/">
+                                MTL-Split (DAC 2024)
+                            </a>
+                            <a class="navbar-item" target="_blank" href="https://intelligolabs.github.io/sparsity_sc_ee/">
+                                Sparsity SC&EE (FDL 2024)
+                            </a>
+                            <a class="navbar-item" target="_blank" href="https://luigicapogrosso.github.io/learning_enabled_cps/">
+                                Learning-Enabled CPS (SIES 2024)
+                            </a>
+                            <a class="navbar-item" target="_blank" href="https://intelligolabs.github.io/LO-SC/">
+                                LO-SC (VLSI Design 2025)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title, authors, institution, links. -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">Controllers for Edge-Cloud Cyber-Physical Systems</h1>
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a target="_blank" href="">Tingan Zhu</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://pganguli.github.io">Prateek Ganguli</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="">Arkaprava Gupta</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="">Shengjie Xu</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.capogrosso.eu">Luigi Capogrosso</a><sup>2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=22371&lang=en">Enrico Fraccaroli</a><sup>1,2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=218&lang=en">Marco Cristani</a><sup>2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en">Franco Fummi</a><sup>2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://cs.unc.edu/person/samarjit-chakraborty/">Samarjit Chakraborty</a><sup>1</sup>
+                                </span>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                              <span class="author-block">
+                                  <sup>1</sup>
+                                  Department of Computer Science, The University of North Carolina at Chapel Hill, USA
+                              </span>
+                              <span class="author-block">
+                                <sup>2</sup>
+                                Department of Engineering for Innovation Medicine, University of Verona, Italy
+                            </span>
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <!-- Proceedings link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+                                    <!-- arXiv link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="ai ai-arxiv"></i>
+                                            </span>
+                                            <span>arXiv</span>
+                                        </a>
+                                    </span>
+                                    <!-- Code link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="https://github.com/luigicapogrosso/controllers_for_edge_cloud_cps" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        <span>Code</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="columns is-centered">
+                                <div class="column has-text-centered">
+                                    <span class="tag is-success is-primary is-large">🎉 Accepted @ COMSNETS 2025 🎉</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaser. -->
+        <section class="hero teaser">
+            <div class="container is-max-desktop">
+                <div class="hero-body has-text-centered">
+                    <img src="./static/images/teaser.png" alt="MTL-Split teaser" type="image/png" style="width: 90%; height: 90%;">
+                    <h6 class="subtitle is-6 has-text-centered">
+                        Different learning-enabled CPS architectures.
+                    </h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abstract. -->
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                Deep Neural Networks (DNNs) are now widely used in Cyber-Physical Systems (CPSs), both for sensor data or perception processing and also as neural network controllers.
+                                However, resource constraints often prevent a full local deployment of the DNNs, e.g., on edge devices. Implementing them on the cloud, on the other hand, is associated with large delays and large volumes of data transfers.
+                                This has resulted in the emergence of Split Computing (SC), where a part of the DNN is implemented on an edge device and the rest in the cloud.
+                                However, how to design control strategies with such a setup has not been sufficiently investigated in the past.
+                                In this paper, we study controller design strategies where state estimates from sensor data processed on an edge device are combined with estimates obtained from the cloud.
+                                While the former is associated with low delays, the state estimates have higher errors or uncertainties.
+                                The estimates from the cloud, obtained with larger DNNs, are, however, delayed.
+                                We show that the problem of sizing the DNNs on the edge and the cloud can be formulated as an optimization problem with the goal of maximizing system safety.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citation. -->
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title">BibTeX</h2>
+<pre><code>TBA.
+</code></pre>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <a class="icon-link" target="_blank" href="https://github.com/luigicapogrosso" class="external-link" disabled>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                This website is licensed under a <a rel="license" target="_blank"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                            </p>
+                            <p>
+                                The source code is based on <a target="_blank" href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
